@@ -25,8 +25,8 @@
 
 class BestTimeToBuyAndSell {
     maxProfit(prices: number[]): number {
-        var maxProfit = 0
-        var minValue = prices[0]
+        var maxProfit: number = 0
+        var minValue: number = prices[0]
 
         for (var price of prices) {
             if (maxProfit < price - minValue) {

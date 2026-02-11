@@ -26,7 +26,7 @@ class ValidAnagram {
     isAnagram(s: string, t: string): boolean {
         if (s.length !== t.length) return false
 
-        const ocurr = new Array(26).fill(0)
+        const ocurr: number[] = new Array(26).fill(0)
 
         for (let i = 0; i < s.length; i++) {
             // Index by charCode - 97 ('a'); increment for s, decrement for t; anagram iff all stay 0

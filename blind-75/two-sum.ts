@@ -35,7 +35,7 @@ class TwoSum {
         const valueToIndex = new Map<number, number>()
 
         for (let i = 0; i < nums.length; i++) {
-            const complement = target - nums[i]
+            const complement: number = target - nums[i]
 
             // If we've already seen the complement, we have a valid pair (smaller index first).
             if (valueToIndex.has(complement)) {
