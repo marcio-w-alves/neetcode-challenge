@@ -18,7 +18,9 @@
  * Constraints:
  *  1 <= s.length <= 1000
  *  s is made up of only printable ASCII characters.
- *  
+ * 
+ * Time: O(n)
+ * Space: O(1) 
  */
 
 class ValidPalindrome {
