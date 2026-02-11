@@ -14,11 +14,14 @@
  *  Output: false
  * 
  * Constraints:
-   's' and 't' consist of lowercase English letters.
+ *  's' and 't' consist of lowercase English letters.
+ * 
+ * Time: O(n + m)
+ * Space: O(1)
  */
 
 
-class Solution {
+class ValidAnagram {
 
     isAnagram(s: string, t: string): boolean {
         if (s.length !== t.length) return false
@@ -35,3 +38,8 @@ class Solution {
     }
 
 }
+
+const validAnagram = new ValidAnagram()
+
+console.log(validAnagram.isAnagram('racecar', 'carrace'))
+console.log(validAnagram.isAnagram('jar', 'jam'))

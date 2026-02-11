@@ -13,9 +13,9 @@
 */
 
 // Time: O(n)
-// Memory: O(n)
+// Space: O(n)
 
-class Solution {
+class ContainsDuplicate {
     hasDuplicate(nums: number[]): boolean {
         const numSet = new Set<number>(nums)
         // Set keeps only unique values; duplicates shrink the size relative to nums.length
@@ -23,4 +23,7 @@ class Solution {
     }
 }
 
+const containsDuplicate = new ContainsDuplicate()
 
+console.log(containsDuplicate.hasDuplicate(([1, 2, 3, 3])))
+console.log(containsDuplicate.hasDuplicate(([1, 2, 3, 4])))
